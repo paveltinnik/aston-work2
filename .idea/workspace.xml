@@ -10,47 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="612853c9-07bd-4e30-a2fe-1b41d2c28ad5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/config/DatabaseConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/dao/AuthorDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/dao/BookDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/dao/GenreDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/dto/AuthorDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/dto/BookDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/dto/GenreDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/exception/InvalidRequestException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/mapper/Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/model/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/model/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/model/Genre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/repository/AuthorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/repository/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/repository/GenreRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/repository/impl/AuthorRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/repository/impl/BookRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/repository/impl/GenreRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/service/AuthorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/service/GenreService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/service/impl/AuthorServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/service/impl/GenreServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/servlet/AuthorServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/servlet/BookServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/servlet/GenreServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/author.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/dao/AuthorDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/dao/BookDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/dao/GenreDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/servlet/AuthorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/servlet/AuthorServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/servlet/BookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/servlet/BookServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/servlet/GenreServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/servlet/GenreServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,9 +41,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2mTaRwArWGYWV2CA44lYeZ4OMjG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -97,6 +64,7 @@
     "Tomcat Server.Tomcat 10.1.29.executor": "Run",
     "Tomcat Server.aston.executor": "Run",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Pavel/IdeaProjects/aston-work2/src/main/resources",
     "node.js.detected.package.eslint": "true",
@@ -104,7 +72,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3091954",
     "settings.editor.selected.configurable": "project.propCompiler",
@@ -260,6 +228,7 @@
       <option name="presentableId" value="Default" />
       <updated>1727103014987</updated>
       <workItem from="1727103016003" duration="11467000" />
+      <workItem from="1728489844988" duration="337000" />
     </task>
     <servers />
   </component>
