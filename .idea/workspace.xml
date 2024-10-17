@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="aston-work2:war" />
       <artifact name="aston-work2:war exploded" />
     </artifacts-to-build>
   </component>
@@ -10,8 +11,78 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="612853c9-07bd-4e30-a2fe-1b41d2c28ad5" name="Changes" comment="1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aston-work2/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/config/DatabaseConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/dto/AuthorDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/dto/BookDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/dto/GenreDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/exception/InvalidRequestException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/exception/ResourceNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/mapper/Mapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/model/Author.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/model/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/model/Genre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/AuthorRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/BookRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/GenreRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/impl/AuthorRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/impl/BookRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/impl/GenreRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/service/AuthorService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/service/BookService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/service/GenreService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/service/impl/AuthorServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/service/impl/BookServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/service/impl/GenreServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/servlet/AuthorServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/servlet/BookServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/servlet/GenreServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/lib/HikariCP-5.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/lib/byte-buddy-1.14.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/lib/checker-qual-3.42.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/lib/error_prone_annotations-2.27.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/lib/gson-2.11.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/lib/jackson-annotations-2.17.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/lib/jackson-core-2.17.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/lib/jackson-databind-2.17.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/lib/postgresql-42.7.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/lib/slf4j-api-2.0.16.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/author.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/config/DatabaseConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/dto/AuthorDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/dto/BookDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/dto/GenreDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/exception/InvalidRequestException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/exception/ResourceNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/mapper/Mapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/model/Author.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/model/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/model/Genre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/AuthorRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/BookRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/GenreRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/impl/AuthorRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/impl/BookRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/impl/GenreRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/service/AuthorService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/service/BookService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/service/GenreService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/service/impl/AuthorServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/service/impl/BookServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/service/impl/GenreServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/servlet/AuthorServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/servlet/BookServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/servlet/GenreServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/schema.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -346,7 +417,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729157262661</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="1">
+      <option name="closed" value="true" />
+      <created>1729159251315</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1729159251315</updated>
+    </task>
+    <task id="LOCAL-00013" summary="1">
+      <option name="closed" value="true" />
+      <created>1729159501381</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1729159501381</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
