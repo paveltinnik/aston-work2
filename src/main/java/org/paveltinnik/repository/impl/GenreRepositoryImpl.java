@@ -18,7 +18,7 @@ public class GenreRepositoryImpl implements GenreRepository {
 
     @Override
     public void save(Genre genre) throws SQLException {
-        String insertGenreQuery = "INSERT INTO genres (name) VALUES (?)";
+        String insertGenreQuery = "INSERT INTO genre (name) VALUES (?)";
         try (Connection connection = dataSource.getConnection();
              PreparedStatement genreStmt = connection.prepareStatement(insertGenreQuery, Statement.RETURN_GENERATED_KEYS)) {
 
@@ -38,7 +38,7 @@ public class GenreRepositoryImpl implements GenreRepository {
 
     @Override
     public Genre findById(Long id) throws SQLException {
-        String selectGenreQuery = "SELECT id, name FROM genres WHERE id = ?";
+        String selectGenreQuery = "SELECT id, name FROM genre WHERE id = ?";
         try (Connection connection = dataSource.getConnection();
              PreparedStatement genreStmt = connection.prepareStatement(selectGenreQuery)) {
 
@@ -61,7 +61,7 @@ public class GenreRepositoryImpl implements GenreRepository {
     @Override
     public List<Genre> findAll() throws SQLException {
         List<Genre> genres = new ArrayList<>();
-        String selectAllGenresQuery = "SELECT id, name FROM genres";
+        String selectAllGenresQuery = "SELECT id, name FROM genre";
         try (Connection connection = dataSource.getConnection();
              PreparedStatement genreStmt = connection.prepareStatement(selectAllGenresQuery);
              ResultSet resultSet = genreStmt.executeQuery()) {
@@ -81,7 +81,7 @@ public class GenreRepositoryImpl implements GenreRepository {
 
     @Override
     public void update(Genre genre) throws SQLException {
-        String updateGenreQuery = "UPDATE genres SET name = ? WHERE id = ?";
+        String updateGenreQuery = "UPDATE genre SET name = ? WHERE id = ?";
         try (Connection connection = dataSource.getConnection();
              PreparedStatement genreStmt = connection.prepareStatement(updateGenreQuery)) {
 
@@ -96,7 +96,7 @@ public class GenreRepositoryImpl implements GenreRepository {
 
     @Override
     public void delete(Long id) throws SQLException {
-        String deleteGenreQuery = "DELETE FROM genres WHERE id = ?";
+        String deleteGenreQuery = "DELETE FROM genre WHERE id = ?";
         try (Connection connection = dataSource.getConnection();
              PreparedStatement genreStmt = connection.prepareStatement(deleteGenreQuery)) {
 
@@ -112,7 +112,7 @@ public class GenreRepositoryImpl implements GenreRepository {
     private Set<Book> getBooksForGenre(Long genreId, Connection connection) throws SQLException {
         Set<Book> books = new HashSet<>();
         String selectBooksQuery = "SELECT b.id, b.title " +
-                "FROM books b " +
+                "FROM book b " +
                 "JOIN book_genre bg ON b.id = bg.book_id " +
                 "WHERE bg.genre_id = ?";
 
