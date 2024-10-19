@@ -19,7 +19,7 @@ public class BookRepositoryImpl implements BookRepository {
 
     @Override
     public void save(Book book) throws SQLException {
-        String insertBookQuery = "INSERT INTO books (title, author_id) VALUES (?, ?)";
+        String insertBookQuery = "INSERT INTO book (title, author_id) VALUES (?, ?)";
         try (Connection connection = dataSource.getConnection();
              PreparedStatement bookStmt = connection.prepareStatement(insertBookQuery, Statement.RETURN_GENERATED_KEYS)) {
 
@@ -42,8 +42,8 @@ public class BookRepositoryImpl implements BookRepository {
     @Override
     public Book findById(Long id) throws SQLException {
         String selectBookQuery = "SELECT b.id, b.title, a.id as author_id, a.name as author_name " +
-                "FROM books b " +
-                "JOIN authors a ON b.author_id = a.id " +
+                "FROM book b " +
+                "JOIN author a ON b.author_id = a.id " +
                 "WHERE b.id = ?";
 
         try (Connection connection = dataSource.getConnection();
@@ -71,8 +71,8 @@ public class BookRepositoryImpl implements BookRepository {
     public List<Book> findAll() throws SQLException {
         List<Book> books = new ArrayList<>();
         String selectAllBooksQuery = "SELECT b.id, b.title, a.id as author_id, a.name as author_name " +
-                "FROM books b " +
-                "JOIN authors a ON b.author_id = a.id";
+                "FROM book b " +
+                "JOIN author a ON b.author_id = a.id";
 
         try (Connection connection = dataSource.getConnection();
              PreparedStatement bookStmt = connection.prepareStatement(selectAllBooksQuery);
@@ -94,7 +94,7 @@ public class BookRepositoryImpl implements BookRepository {
 
     @Override
     public void update(Book book) throws SQLException {
-        String updateBookQuery = "UPDATE books SET title = ?, author_id = ? WHERE id = ?";
+        String updateBookQuery = "UPDATE book SET title = ?, author_id = ? WHERE id = ?";
         try (Connection connection = dataSource.getConnection();
              PreparedStatement bookStmt = connection.prepareStatement(updateBookQuery)) {
 
@@ -110,7 +110,7 @@ public class BookRepositoryImpl implements BookRepository {
 
     @Override
     public void delete(Long id) throws SQLException {
-        String deleteBookQuery = "DELETE FROM books WHERE id = ?";
+        String deleteBookQuery = "DELETE FROM book WHERE id = ?";
         try (Connection connection = dataSource.getConnection();
              PreparedStatement bookStmt = connection.prepareStatement(deleteBookQuery)) {
             // Удаление книги
@@ -125,7 +125,7 @@ public class BookRepositoryImpl implements BookRepository {
     private Set<Genre> getGenresForBook(Long bookId, Connection connection) throws SQLException {
         Set<Genre> genres = new HashSet<>();
         String selectGenresQuery = "SELECT g.id, g.name " +
-                "FROM genres g " +
+                "FROM genre g " +
                 "JOIN book_genre bg ON g.id = bg.genre_id " +
                 "WHERE bg.book_id = ?";
 

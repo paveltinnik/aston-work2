@@ -22,7 +22,6 @@ public class Mapper {
         AuthorDTO authorDTO = new AuthorDTO();
         authorDTO.setId(author.getId());
         authorDTO.setName(author.getName());
-        authorDTO.setBookIds(author.getBooks().stream().map(Book::getId).collect(Collectors.toSet()));
         return authorDTO;
     }
 

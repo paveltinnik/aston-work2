@@ -6,7 +6,6 @@ import java.util.Set;
 public class Author {
     private Long id;
     private String name;
-    private Set<Book> books = new HashSet<>();
 
     public Author() {}
 
@@ -29,13 +28,5 @@ public class Author {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Set<Book> getBooks() {
-        return books;
-    }
-
-    public void setBooks(Set<Book> books) {
-        this.books = books;
     }
 }

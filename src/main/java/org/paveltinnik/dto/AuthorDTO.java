@@ -1,18 +1,14 @@
 package org.paveltinnik.dto;
 
-import java.util.Set;
-
 public class AuthorDTO {
     private Long id;
     private String name;
-    private Set<Long> bookIds; // IDs of books authored by this author
 
     public AuthorDTO() {}
 
-    public AuthorDTO(Long id, String name, Set<Long> bookIds) {
+    public AuthorDTO(Long id, String name) {
         this.id = id;
         this.name = name;
-        this.bookIds = bookIds;
     }
 
     public Long getId() {
@@ -29,13 +25,5 @@ public class AuthorDTO {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Set<Long> getBookIds() {
-        return bookIds;
-    }
-
-    public void setBookIds(Set<Long> bookIds) {
-        this.bookIds = bookIds;
     }
 }
