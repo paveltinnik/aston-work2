@@ -9,31 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="612853c9-07bd-4e30-a2fe-1b41d2c28ad5" name="Changes" comment="1">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f65125f8-1af7-4a95-9654-8dfe7b376b44.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f65125f8-1af7-4a95-9654-8dfe7b376b44.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f65125f8-1af7-4a95-9654-8dfe7b376b44/storage_v2/_src_/database/work2.QRvBBg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f65125f8-1af7-4a95-9654-8dfe7b376b44/storage_v2/_src_/database/work2.QRvBBg/schema/public.abK9xQ.meta" afterDir="false" />
+    <list default="true" id="612853c9-07bd-4e30-a2fe-1b41d2c28ad5" name="Changes" comment="refactor">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/paveltinnik/repository/AuthorRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/paveltinnik/service/AuthorServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/paveltinnik/servlet/AuthorServletImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/dto/AuthorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/dto/AuthorDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/exception/InvalidRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/exception/ResourceNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/mapper/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/mapper/Mapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/model/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/model/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/servlet/AuthorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/servlet/AuthorServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aston-work2/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/dto/AuthorDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/dto/AuthorDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/exception/InvalidRequestException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/exception/ResourceNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/mapper/Mapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/mapper/Mapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/model/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/model/Author.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/impl/AuthorRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/impl/AuthorRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/servlet/AuthorServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/servlet/AuthorServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/dto/AuthorDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/dto/AuthorDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/exception/InvalidRequestException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/exception/ResourceNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/mapper/Mapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/mapper/Mapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/model/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/model/Author.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/impl/AuthorRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/impl/AuthorRepositoryImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/servlet/AuthorServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/servlet/AuthorServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +28,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -93,6 +77,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.AuthorRepositoryImplTest.executor": "Run",
+    "JUnit.AuthorRepositoryImplTest.findAll_ShouldReturnAllAuthors.executor": "Run",
+    "JUnit.AuthorServiceImplTest (1).executor": "Run",
+    "JUnit.AuthorServiceImplTest.executor": "Run",
+    "JUnit.AuthorServiceImplTest.save_ShouldInsertAuthor.executor": "Run",
+    "JUnit.BookRepositoryImplTest.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.aston-work2 [clean].executor": "Run",
     "Maven.aston-work2 [deploy].executor": "Run",
@@ -130,6 +120,10 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Pavel\IdeaProjects\aston-work2\src\main\webapp" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.paveltinnik.service.impl" />
+      <recent name="org.paveltinnik.service" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="excludedTypes">
@@ -138,16 +132,79 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.aston">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.paveltinnik.Main" />
+  <component name="RunManager" selected="JUnit.AuthorServletImplTest">
+    <configuration name="AuthorRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aston-work2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.paveltinnik.*" />
+          <option name="PATTERN" value="org.paveltinnik.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.paveltinnik.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.paveltinnik.repository.AuthorRepositoryImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthorServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aston-work2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.paveltinnik.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.paveltinnik.service" />
+      <option name="MAIN_CLASS_NAME" value="org.paveltinnik.service.AuthorServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthorServiceImplTest.save_ShouldInsertAuthor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aston-work2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.paveltinnik.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.paveltinnik.service" />
+      <option name="MAIN_CLASS_NAME" value="org.paveltinnik.service.AuthorServiceImplTest" />
+      <option name="METHOD_NAME" value="save_ShouldInsertAuthor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthorServletImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aston-work2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.paveltinnik.servlet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.paveltinnik.servlet" />
+      <option name="MAIN_CLASS_NAME" value="org.paveltinnik.servlet.AuthorServletImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthorServletTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aston-work2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.paveltinnik.servlet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.paveltinnik.servlet" />
+      <option name="MAIN_CLASS_NAME" value="org.paveltinnik.servlet.AuthorServletTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -242,12 +299,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.AuthorRepositoryImplTest" />
+      <item itemvalue="JUnit.AuthorServiceImplTest" />
+      <item itemvalue="JUnit.AuthorServiceImplTest.save_ShouldInsertAuthor" />
+      <item itemvalue="JUnit.AuthorServletImplTest" />
+      <item itemvalue="JUnit.AuthorServletTest" />
       <item itemvalue="Tomcat Server.aston" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.AuthorServletImplTest" />
+        <item itemvalue="JUnit.AuthorServletTest" />
+        <item itemvalue="JUnit.AuthorServiceImplTest" />
+        <item itemvalue="JUnit.AuthorServiceImplTest.save_ShouldInsertAuthor" />
+        <item itemvalue="JUnit.AuthorRepositoryImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -398,7 +463,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729159797572</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="refactor">
+      <option name="closed" value="true" />
+      <created>1729338269003</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1729338269003</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,7 +490,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

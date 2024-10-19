@@ -7,7 +7,6 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.paveltinnik.dto.AuthorDTO;
-import org.paveltinnik.dto.BookDTO;
 import org.paveltinnik.service.AuthorService;
 import org.paveltinnik.service.impl.AuthorServiceImpl;
 import org.slf4j.Logger;
