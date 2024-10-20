@@ -1,15 +1,10 @@
 package org.paveltinnik.service.impl;
 
-import org.mapstruct.factory.Mappers;
 import org.paveltinnik.dto.BookDTO;
 import org.paveltinnik.entity.Author;
 import org.paveltinnik.entity.Book;
 import org.paveltinnik.entity.Genre;
 import org.paveltinnik.mapper.BookMapper;
-import org.paveltinnik.mapper.Mapper;
-import org.paveltinnik.repository.AuthorRepository;
-import org.paveltinnik.repository.BookRepository;
-import org.paveltinnik.repository.GenreRepository;
 import org.paveltinnik.repository.impl.AuthorRepositoryImpl;
 import org.paveltinnik.repository.impl.BookRepositoryImpl;
 import org.paveltinnik.repository.impl.GenreRepositoryImpl;
@@ -17,7 +12,6 @@ import org.paveltinnik.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.sql.SQLException;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
