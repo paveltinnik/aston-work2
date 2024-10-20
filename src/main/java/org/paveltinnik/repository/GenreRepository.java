@@ -1,6 +1,6 @@
 package org.paveltinnik.repository;
 
-import org.paveltinnik.model.Genre;
+import org.paveltinnik.entity.Genre;
 
 import java.sql.SQLException;
 import java.util.List;

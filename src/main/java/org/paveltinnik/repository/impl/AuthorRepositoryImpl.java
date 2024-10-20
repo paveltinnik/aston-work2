@@ -51,10 +51,15 @@ public class AuthorRepositoryImpl implements AuthorRepository {
         jdbcTemplate.update(sql, author.getName(), author.getId());
     }
 
-    //TODO
     @Override
     public void delete(Long id) {
-        String sql = "DELETE FROM author WHERE id = ?";
+        String sql = """
+                                ALTER TABLE book
+                                DROP CONSTRAINT IF EXISTS book_author_id_fkey
+                                ADD CONSTRAINT book_author_id_fkey FOREIGN KEY (author_id) REFERENCES author(id) ON DELETE CASCADE
+                                DELETE FROM author WHERE id = ?;
+                """;
+
         jdbcTemplate.update(sql, id);
     }
 }

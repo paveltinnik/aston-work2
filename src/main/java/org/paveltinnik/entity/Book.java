@@ -8,14 +8,23 @@ import java.util.Set;
 @Entity
 public class Book {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(nullable = false)
     private String title;
+
     @ManyToOne
-    @JoinColumn(name = "author_id")
-    private Author author; // ManyToOne relationship
+    @JoinColumn(name = "author_id", nullable = false)
+    private Author author;
+
     @ManyToMany
-    @JoinColumn(name = "genre_id")
-    private Set<Genre> genres = new HashSet<>(); // ManyToMany relationship
+    @JoinTable(
+            name = "book_genre",
+            joinColumns = @JoinColumn(name = "book_id"),
+            inverseJoinColumns = @JoinColumn(name = "genre_id")
+    )
+    private Set<Genre> genres = new HashSet<>();
 
     public Book() {}
 
@@ -55,5 +64,15 @@ public class Book {
 
     public void setGenres(Set<Genre> genres) {
         this.genres = genres;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", author=" + author +
+                ", genres=" + genres +
+                '}';
     }
 }

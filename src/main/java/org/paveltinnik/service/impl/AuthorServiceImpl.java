@@ -14,34 +14,36 @@ import java.util.stream.Collectors;
 @Service
 public class AuthorServiceImpl implements AuthorService {
 
-    @Autowired
     private final AuthorRepositoryImpl authorRepository;
+    private final AuthorMapper authorMapper;
 
-    public AuthorServiceImpl(AuthorRepositoryImpl authorRepository) {
+    @Autowired
+    public AuthorServiceImpl(AuthorRepositoryImpl authorRepository, AuthorMapper authorMapper) {
         this.authorRepository = authorRepository;
+        this.authorMapper = authorMapper;
     }
 
     @Override
     public void save(AuthorDTO authorDTO) {
-        Author author = AuthorMapper.INSTANCE.toAuthor(authorDTO);
+        Author author = authorMapper.toAuthor(authorDTO);
         authorRepository.save(author);
     }
 
     @Override
     public AuthorDTO findById(Long id) {
-        return AuthorMapper.INSTANCE.toAuthorDTO(authorRepository.findById(id));
+        return authorMapper.toAuthorDTO(authorRepository.findById(id));
     }
 
     @Override
     public List<AuthorDTO> findAll() {
         return authorRepository.findAll().stream()
-                .map(AuthorMapper.INSTANCE::toAuthorDTO)
+                .map(authorMapper::toAuthorDTO)
                 .collect(Collectors.toList());
     }
 
     @Override
     public void update(AuthorDTO authorDTO) {
-        authorRepository.update(AuthorMapper.INSTANCE.toAuthor(authorDTO));
+        authorRepository.update(authorMapper.toAuthor(authorDTO));
     }
 
     @Override

@@ -1,8 +1,5 @@
 package org.paveltinnik.model;
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class Author {
     private Long id;
     private String name;

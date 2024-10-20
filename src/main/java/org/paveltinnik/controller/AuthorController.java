@@ -1,4 +1,4 @@
-package org.paveltinnik.servlet;
+package org.paveltinnik.controller;
 
 import org.paveltinnik.dto.AuthorDTO;
 import org.paveltinnik.service.impl.AuthorServiceImpl;

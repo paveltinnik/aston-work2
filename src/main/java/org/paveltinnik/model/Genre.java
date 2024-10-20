@@ -6,7 +6,7 @@ import java.util.Set;
 public class Genre {
     private Long id;
     private String name;
-    private Set<Book> books = new HashSet<>(); // ManyToMany relationship
+    private Set<Book> books = new HashSet<>();
 
     public Genre() {}
 

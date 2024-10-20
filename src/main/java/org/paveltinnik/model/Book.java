@@ -6,8 +6,8 @@ import java.util.Set;
 public class Book {
     private Long id;
     private String title;
-    private Author author; // ManyToOne relationship
-    private Set<Genre> genres = new HashSet<>(); // ManyToMany relationship
+    private Author author;
+    private Set<Genre> genres = new HashSet<>();
 
     public Book() {}
 

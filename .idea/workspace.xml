@@ -9,24 +9,63 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="612853c9-07bd-4e30-a2fe-1b41d2c28ad5" name="Changes" comment="author working">
+    <list default="true" id="612853c9-07bd-4e30-a2fe-1b41d2c28ad5" name="Changes" comment="author working without deleting refactor">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/controller/GenreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/mapper/BookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/mapper/GenreMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/config/WebAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/config/WebAppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/dto/AuthorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/dto/AuthorDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/config/DatabaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/config/DatabaseConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/dto/GenreDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/dto/GenreDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/entity/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/entity/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/entity/Genre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/mapper/AuthorMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/mapper/AuthorMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/mapper/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/mapper/Mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/model/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/model/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/model/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/model/Genre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/repository/GenreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/repository/GenreRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/repository/impl/AuthorRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/repository/impl/AuthorRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/repository/impl/BookRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/repository/impl/BookRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/repository/impl/GenreRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/repository/impl/GenreRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/service/BookService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/service/impl/AuthorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/service/impl/AuthorServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/servlet/AuthorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/servlet/AuthorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/service/impl/GenreServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/service/impl/GenreServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/servlet/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/controller/AuthorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/servlet/BookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/servlet/GenreServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/dto/AuthorDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/dto/AuthorDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/paveltinnik/servlet/AuthorServletImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/paveltinnik/controller/AuthorServletImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/config/DatabaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/config/DatabaseConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/dto/GenreDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/dto/GenreDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/mapper/Mapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/mapper/Mapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/model/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/model/Author.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/BookRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/GenreRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/GenreRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/impl/AuthorRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/impl/AuthorRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/impl/BookRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/impl/BookRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/impl/GenreRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/impl/GenreRepositoryImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/service/impl/AuthorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/service/impl/AuthorServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/servlet/AuthorServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/service/impl/GenreServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/service/impl/GenreServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/servlet/GenreServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/dto/AuthorDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/dto/AuthorDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/config/DatabaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/config/DatabaseConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/dto/GenreDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/dto/GenreDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/mapper/Mapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/mapper/Mapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/model/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/model/Author.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/BookRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/GenreRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/GenreRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/impl/AuthorRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/impl/AuthorRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/impl/BookRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/impl/BookRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/impl/GenreRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/impl/GenreRepositoryImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/service/impl/AuthorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/service/impl/AuthorServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/service/impl/BookServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/servlet/AuthorServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/service/impl/GenreServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/service/impl/GenreServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/servlet/GenreServlet.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +77,7 @@
       <list>
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -132,13 +172,16 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Pavel\IdeaProjects\aston-work2\src\main\webapp" />
     </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="org.paveltinnik.repository.impl" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.paveltinnik.service.impl" />
       <recent name="org.paveltinnik.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.paveltinnik.config" />
       <recent name="org.paveltinnik.mapper" />
+      <recent name="org.paveltinnik.config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -199,7 +242,7 @@
       <module name="aston-work2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.paveltinnik.servlet.AuthorController" />
+          <option name="PATTERN" value="org.paveltinnik.controller.AuthorController" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -214,7 +257,7 @@
       <module name="aston-work2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.paveltinnik.servlet.AuthorController" />
+          <option name="PATTERN" value="org.paveltinnik.controller.AuthorController" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -367,7 +410,7 @@
       <workItem from="1729098059218" duration="73000" />
       <workItem from="1729099372167" duration="74000" />
       <workItem from="1729397144939" duration="6035000" />
-      <workItem from="1729414731304" duration="4670000" />
+      <workItem from="1729414731304" duration="16158000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -513,7 +556,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729417064142</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="author working without deleting">
+      <option name="closed" value="true" />
+      <created>1729419413751</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1729419413751</updated>
+    </task>
+    <task id="LOCAL-00020" summary="author working without deleting refactor">
+      <option name="closed" value="true" />
+      <created>1729419514806</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1729419514806</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -535,7 +594,9 @@
     <MESSAGE value="refactor" />
     <MESSAGE value="ref test" />
     <MESSAGE value="author working" />
-    <option name="LAST_COMMIT_MESSAGE" value="author working" />
+    <MESSAGE value="author working without deleting" />
+    <MESSAGE value="author working without deleting refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="author working without deleting refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

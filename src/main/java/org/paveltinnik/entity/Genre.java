@@ -7,12 +7,16 @@ import java.util.Set;
 
 @Entity
 public class Genre {
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(nullable = false, unique = true)
     private String name;
-    @ManyToMany
-    @JoinColumn(name = "book_id")
-    private Set<Book> books = new HashSet<>(); // ManyToMany relationship
+
+//    @ManyToMany(mappedBy = "genres")
+//    private Set<Book> books = new HashSet<>(); // ManyToMany relationship
 
     public Genre() {}
 
@@ -37,11 +41,20 @@ public class Genre {
         this.name = name;
     }
 
-    public Set<Book> getBooks() {
-        return books;
-    }
+//    public Set<Book> getBooks() {
+//        return books;
+//    }
+//
+//    public void setBooks(Set<Book> books) {
+//        this.books = books;
+//    }
 
-    public void setBooks(Set<Book> books) {
-        this.books = books;
+
+    @Override
+    public String toString() {
+        return "Genre{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

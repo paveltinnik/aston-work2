@@ -3,9 +3,10 @@ package org.paveltinnik.mapper;
 import org.paveltinnik.dto.AuthorDTO;
 import org.paveltinnik.dto.BookDTO;
 import org.paveltinnik.dto.GenreDTO;
-import org.paveltinnik.model.Author;
-import org.paveltinnik.model.Book;
-import org.paveltinnik.model.Genre;
+import org.paveltinnik.entity.Author;
+import org.paveltinnik.entity.Book;
+import org.paveltinnik.entity.Genre;
+
 
 import java.util.stream.Collectors;
 
@@ -53,7 +54,7 @@ public class Mapper {
         GenreDTO genreDTO = new GenreDTO();
         genreDTO.setId(genre.getId());
         genreDTO.setName(genre.getName());
-        genreDTO.setBookIds(genre.getBooks().stream().map(Book::getId).collect(Collectors.toSet()));
+//        genreDTO.setBookIds(genre.getBooks().stream().map(Book::getId).collect(Collectors.toSet()));
         return genreDTO;
     }
 }

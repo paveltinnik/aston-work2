@@ -7,7 +7,7 @@
 
 <!--  <servlet>-->
 <!--    <servlet-name>AuthorServlet</servlet-name>-->
-<!--    <servlet-class>org.paveltinnik.servlet.AuthorController</servlet-class>-->
+<!--    <servlet-class>org.paveltinnik.controller.AuthorController</servlet-class>-->
 <!--  </servlet>-->
 
 <!--  <servlet-mapping>-->
