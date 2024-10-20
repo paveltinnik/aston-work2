@@ -8,7 +8,6 @@ import org.paveltinnik.service.AuthorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.sql.SQLException;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -29,7 +28,7 @@ public class AuthorServiceImpl implements AuthorService {
     }
 
     @Override
-    public AuthorDTO findById(Long id){
+    public AuthorDTO findById(Long id) {
         return AuthorMapper.INSTANCE.toAuthorDTO(authorRepository.findById(id));
     }
 
