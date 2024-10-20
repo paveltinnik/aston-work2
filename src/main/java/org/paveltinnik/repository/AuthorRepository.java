@@ -1,6 +1,6 @@
 package org.paveltinnik.repository;
 
-import org.paveltinnik.model.Author;
+import org.paveltinnik.entity.Author;
 
 import java.sql.SQLException;
 import java.util.List;
