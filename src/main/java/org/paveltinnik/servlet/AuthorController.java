@@ -1,44 +1,74 @@
 package org.paveltinnik.servlet;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
 import org.paveltinnik.dto.AuthorDTO;
-import org.paveltinnik.service.AuthorService;
+import org.paveltinnik.repository.impl.AuthorRepositoryImpl;
 import org.paveltinnik.service.impl.AuthorServiceImpl;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
-import java.io.IOException;
 import java.util.List;
+import java.util.logging.Logger;
 
 @RestController
 @RequestMapping("/author")
-public class AuthorServlet {
+public class AuthorController {
+
+    Logger log = Logger.getLogger(AuthorController.class.getName());
 
     @Autowired
     private final AuthorServiceImpl authorService;
 
-    public AuthorServlet(AuthorServiceImpl authorService) {
+    public AuthorController(AuthorServiceImpl authorService) {
         this.authorService = authorService;
     }
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 
-    Logger logger = LoggerFactory.getLogger(AuthorServlet.class);
 
+    //    @GetMapping
+//    public String getAuthors() throws JsonProcessingException {
+//        List<AuthorDTO> authorDTOList = authorService.findAll();
+//        log.info(objectMapper.writeValueAsString(authorDTOList));
+//        return objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(authorDTOList);
+//    }
     @GetMapping
-    public String getAuthors() {
-        List<AuthorDTO> authorDTOList = authorService.findAll();
-        return authorDTOList.toString();
+    public ResponseEntity<List<AuthorDTO>> getAllAuthors() {
+        List<AuthorDTO> authors = authorService.findAll();
+        return new ResponseEntity<>(authors, HttpStatus.OK);
     }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<AuthorDTO> getAuthorById(@PathVariable("id") Long id) {
+        AuthorDTO authorDTO = authorService.findById(id);
+        if (authorDTO != null) {
+            return new ResponseEntity<>(authorDTO, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
+    @PostMapping
+    public ResponseEntity<Void> createAuthor(@RequestBody AuthorDTO authorDTO) {
+        authorService.save(authorDTO);
+        return new ResponseEntity<>(HttpStatus.CREATED);
+    }
+
+    @PutMapping
+    public ResponseEntity<Void> updateAuthor(@RequestBody AuthorDTO authorDTO) {
+        authorService.update(authorDTO);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteAuthor(@PathVariable("id") Long id) {
+        authorService.delete(id);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
 
 //    @Override
 //    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

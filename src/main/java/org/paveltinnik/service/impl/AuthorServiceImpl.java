@@ -1,10 +1,8 @@
 package org.paveltinnik.service.impl;
 
 import org.paveltinnik.dto.AuthorDTO;
+import org.paveltinnik.entity.Author;
 import org.paveltinnik.mapper.AuthorMapper;
-import org.paveltinnik.mapper.Mapper;
-import org.paveltinnik.model.Author;
-import org.paveltinnik.repository.AuthorRepository;
 import org.paveltinnik.repository.impl.AuthorRepositoryImpl;
 import org.paveltinnik.service.AuthorService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,23 +24,13 @@ public class AuthorServiceImpl implements AuthorService {
 
     @Override
     public void save(AuthorDTO authorDTO) {
-//        try {
-//            Author author = Mapper.toAuthor(authorDTO);
-//            authorRepository.save(author);
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
+        Author author = AuthorMapper.INSTANCE.toAuthor(authorDTO);
+        authorRepository.save(author);
     }
 
     @Override
     public AuthorDTO findById(Long id){
-//        try {
-//            return Mapper.toAuthorDTO(authorRepository.findById(id));
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//            return null;
-//        }
-        return null;
+        return AuthorMapper.INSTANCE.toAuthorDTO(authorRepository.findById(id));
     }
 
     @Override
@@ -54,19 +42,11 @@ public class AuthorServiceImpl implements AuthorService {
 
     @Override
     public void update(AuthorDTO authorDTO) {
-//        try {
-//            authorRepository.update(Mapper.toAuthor(authorDTO));
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
+        authorRepository.update(AuthorMapper.INSTANCE.toAuthor(authorDTO));
     }
 
     @Override
     public void delete(Long id) {
-        try {
-            authorRepository.delete(id);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        authorRepository.delete(id);
     }
 }

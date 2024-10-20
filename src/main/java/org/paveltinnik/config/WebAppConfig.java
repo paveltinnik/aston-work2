@@ -17,16 +17,16 @@ import java.util.List;
 @ComponentScan("org.paveltinnik")
 public class WebAppConfig implements WebMvcConfigurer {
 
-//    @Override
-//    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
-//        MappingJackson2HttpMessageConverter messageConverter = new MappingJackson2HttpMessageConverter();
-//        messageConverter.setObjectMapper(new JsonMapper());
-//        messageConverter.setSupportedMediaTypes(Collections.singletonList(MediaType.APPLICATION_JSON));
-//        converters.add(messageConverter);
-//    }
-
     @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
-        converters.add(new MappingJackson2HttpMessageConverter());
+        MappingJackson2HttpMessageConverter messageConverter = new MappingJackson2HttpMessageConverter();
+        messageConverter.setObjectMapper(new JsonMapper());
+        messageConverter.setSupportedMediaTypes(Collections.singletonList(MediaType.APPLICATION_JSON));
+        converters.add(messageConverter);
     }
+
+//    @Override
+//    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
+//        converters.add(new MappingJackson2HttpMessageConverter());
+//    }
 }
