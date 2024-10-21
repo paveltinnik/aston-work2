@@ -4,17 +4,13 @@ import org.paveltinnik.dto.GenreDTO;
 import org.paveltinnik.entity.Book;
 import org.paveltinnik.entity.Genre;
 import org.paveltinnik.mapper.GenreMapper;
-import org.paveltinnik.repository.GenreRepository;
 import org.paveltinnik.repository.impl.BookRepositoryImpl;
 import org.paveltinnik.repository.impl.GenreRepositoryImpl;
 import org.paveltinnik.service.GenreService;
-import org.paveltinnik.mapper.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.sql.SQLException;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.logging.Logger;

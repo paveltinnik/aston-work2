@@ -9,28 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="612853c9-07bd-4e30-a2fe-1b41d2c28ad5" name="Changes" comment="book изменял mapstruct">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/mapper/GenreMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/mapper/GenreMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/repository/impl/BookRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/repository/impl/BookRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/repository/impl/GenreRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/repository/impl/GenreRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/service/GenreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/service/GenreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/service/impl/GenreServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/service/impl/GenreServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/mapper/GenreMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/mapper/GenreMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/mapper/GenreMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/mapper/GenreMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/impl/BookRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/impl/BookRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/impl/GenreRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/repository/impl/GenreRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/service/GenreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/service/GenreService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/service/impl/GenreServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/aston-work2/WEB-INF/classes/org/paveltinnik/service/impl/GenreServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/mapper/GenreMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/mapper/GenreMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/mapper/GenreMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/mapper/GenreMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/impl/BookRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/impl/BookRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/impl/GenreRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/repository/impl/GenreRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/service/GenreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/service/GenreService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/paveltinnik/service/impl/GenreServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/paveltinnik/service/impl/GenreServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/org/paveltinnik/mapper/AuthorMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/org/paveltinnik/mapper/AuthorMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/org/paveltinnik/mapper/BookMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/org/paveltinnik/mapper/BookMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/org/paveltinnik/mapper/GenreMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/org/paveltinnik/mapper/GenreMapperImpl.java" afterDir="false" />
+    <list default="true" id="612853c9-07bd-4e30-a2fe-1b41d2c28ad5" name="Changes" comment="genre working">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/paveltinnik/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/paveltinnik/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,46 +68,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AuthorRepositoryImplTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AuthorRepositoryImplTest.findAll_ShouldReturnAllAuthors.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AuthorServiceImplTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AuthorServiceImplTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AuthorServiceImplTest.save_ShouldInsertAuthor.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AuthorServletImplTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AuthorServletTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookRepositoryImplTest.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.aston-work2 [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.aston-work2 [deploy].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.aston-work2 [package].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.Tomcat 10.1.29.executor&quot;: &quot;Run&quot;,
-    &quot;Tomcat Server.aston.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;work3&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/t2803/IdeaProjects/aston-work2/src/main/java/org/paveltinnik/entity&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3091954&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.AuthorRepositoryImplTest.executor": "Run",
+    "JUnit.AuthorRepositoryImplTest.findAll_ShouldReturnAllAuthors.executor": "Run",
+    "JUnit.AuthorServiceImplTest (1).executor": "Run",
+    "JUnit.AuthorServiceImplTest.executor": "Run",
+    "JUnit.AuthorServiceImplTest.save_ShouldInsertAuthor.executor": "Run",
+    "JUnit.AuthorServletImplTest.executor": "Run",
+    "JUnit.AuthorServletTest.executor": "Run",
+    "JUnit.BookRepositoryImplTest.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.aston-work2 [clean].executor": "Run",
+    "Maven.aston-work2 [deploy].executor": "Run",
+    "Maven.aston-work2 [package].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Tomcat Server.Tomcat 10.1.29.executor": "Run",
+    "Tomcat Server.aston.executor": "Run",
+    "git-widget-placeholder": "work3",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/t2803/IdeaProjects/aston-work2/src/main/java/org/paveltinnik/entity",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3091954",
+    "settings.editor.selected.configurable": "project.propCompiler",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\t2803\IdeaProjects\aston-work2\src\main\java\org\paveltinnik\entity" />
@@ -554,7 +533,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729433303876</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="genre working">
+      <option name="closed" value="true" />
+      <created>1729503874705</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1729503874705</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -580,7 +567,8 @@
     <MESSAGE value="author working without deleting refactor" />
     <MESSAGE value="book изменяю репозиторий (по старой версии)" />
     <MESSAGE value="book изменял mapstruct" />
-    <option name="LAST_COMMIT_MESSAGE" value="book изменял mapstruct" />
+    <MESSAGE value="genre working" />
+    <option name="LAST_COMMIT_MESSAGE" value="genre working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
