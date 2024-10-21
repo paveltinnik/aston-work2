@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-10-21T09:05:28+0700",
+    date = "2024-10-21T14:24:35+0700",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 17.0.2 (Oracle Corporation)"
 )
 @Component
@@ -23,6 +23,8 @@ public class GenreMapperImpl implements GenreMapper {
 
         genreDTO.setId( genre.getId() );
         genreDTO.setName( genre.getName() );
+
+        genreDTO.setBookIds( mapBooksToIDs(genre.getBooks()) );
 
         return genreDTO;
     }

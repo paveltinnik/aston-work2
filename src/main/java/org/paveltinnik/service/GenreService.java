@@ -5,11 +5,12 @@ import org.paveltinnik.dto.GenreDTO;
 import java.util.List;
 
 public interface GenreService {
-    void save(GenreDTO genreDTO);
+
+    List<GenreDTO> findAll();
 
     GenreDTO findById(Long id);
 
-    List<GenreDTO> findAll();
+    void save(GenreDTO genreDTO);
 
     void update(GenreDTO genreDTO);
 
