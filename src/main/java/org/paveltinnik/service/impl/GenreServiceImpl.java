@@ -18,32 +18,34 @@ import java.util.stream.Collectors;
 public class GenreServiceImpl implements GenreService {
 
     private final GenreRepositoryImpl genreRepository;
+    private final GenreMapper genreMapper;
 
     @Autowired
-    public GenreServiceImpl(GenreRepositoryImpl genreRepository) {
+    public GenreServiceImpl(GenreRepositoryImpl genreRepository, GenreMapper genreMapper) {
         this.genreRepository = genreRepository;
+        this.genreMapper = genreMapper;
     }
 
     @Override
     public void save(GenreDTO genreDTO) {
-        genreRepository.save(GenreMapper.INSTANCE.toGenre(genreDTO));
+        genreRepository.save(genreMapper.toGenre(genreDTO));
     }
 
     @Override
     public GenreDTO findById(Long id) {
-        return GenreMapper.INSTANCE.toGenreDTO(genreRepository.findById(id));
+        return genreMapper.toGenreDTO(genreRepository.findById(id));
     }
 
     @Override
     public List<GenreDTO> findAll() {
         return genreRepository.findAll().stream()
-                .map(GenreMapper.INSTANCE::toGenreDTO)
+                .map(genreMapper::toGenreDTO)
                 .collect(Collectors.toList());
     }
 
     @Override
     public void update(GenreDTO genreDTO) {
-        genreRepository.update(GenreMapper.INSTANCE.toGenre(genreDTO));
+        genreRepository.update(genreMapper.toGenre(genreDTO));
     }
 
     @Override

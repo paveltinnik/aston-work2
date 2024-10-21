@@ -54,7 +54,7 @@ public class Mapper {
         GenreDTO genreDTO = new GenreDTO();
         genreDTO.setId(genre.getId());
         genreDTO.setName(genre.getName());
-//        genreDTO.setBookIds(genre.getBooks().stream().map(Book::getId).collect(Collectors.toSet()));
+        genreDTO.setBookIds(genre.getBooks().stream().map(Book::getId).collect(Collectors.toSet()));
         return genreDTO;
     }
 }

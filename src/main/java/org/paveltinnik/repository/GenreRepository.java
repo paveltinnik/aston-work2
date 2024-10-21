@@ -6,11 +6,12 @@ import java.sql.SQLException;
 import java.util.List;
 
 public interface GenreRepository {
-    void save(Genre genre) throws SQLException;
+
+    List<Genre> findAll() throws SQLException;
 
     Genre findById(Long id) throws SQLException;
 
-    List<Genre> findAll() throws SQLException;
+    void save(Genre genre) throws SQLException;
 
     void update(Genre genre) throws SQLException;
 

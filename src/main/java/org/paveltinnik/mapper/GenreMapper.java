@@ -7,9 +7,8 @@ import org.paveltinnik.entity.Genre;
 import org.springframework.stereotype.Component;
 
 @Component
-@Mapper
+@Mapper(componentModel = "spring")
 public interface GenreMapper {
-    GenreMapper INSTANCE = Mappers.getMapper(GenreMapper.class);
 
     GenreDTO toGenreDTO(Genre genre);
     Genre toGenre(GenreDTO genreDTO);

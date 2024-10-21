@@ -9,7 +9,7 @@ import java.sql.Statement;
 
 public class Main {
     public static void main(String[] args) {
-        //TODO
+
 
 //        try (Connection connection = DatabaseConfig.getConnection()) {
 //            executeSqlScript(connection, "schema.sql");

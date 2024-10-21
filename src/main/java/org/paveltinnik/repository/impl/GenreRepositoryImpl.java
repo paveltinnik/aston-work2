@@ -1,5 +1,6 @@
 package org.paveltinnik.repository.impl;
 
+import org.paveltinnik.entity.Book;
 import org.paveltinnik.entity.Genre;
 import org.paveltinnik.repository.GenreRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,10 +9,18 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.logging.Logger;
 
 @Repository
 public class GenreRepositoryImpl implements GenreRepository {
+
+    Logger logger = Logger.getLogger(GenreRepositoryImpl.class.getName());
 
     private final JdbcTemplate jdbcTemplate;
 
@@ -59,6 +68,29 @@ public class GenreRepositoryImpl implements GenreRepository {
         jdbcTemplate.update(deleteGenreSql, id);
     }
 
+    private Set<Book> getBooksForGenre(Long genreId, Connection connection) {
+        Set<Book> books = new HashSet<>();
+        String selectBooksQuery = "SELECT b.id, b.title " +
+                "FROM book b " +
+                "JOIN book_genre bg ON b.id = bg.book_id " +
+                "WHERE bg.genre_id = ?";
+
+        try (PreparedStatement bookStmt = connection.prepareStatement(selectBooksQuery)) {
+            bookStmt.setLong(1, genreId);
+            try (ResultSet resultSet = bookStmt.executeQuery()) {
+                while (resultSet.next()) {
+                    Book book = new Book();
+                    book.setId(resultSet.getLong("id"));
+                    book.setTitle(resultSet.getString("title"));
+                    books.add(book);
+                }
+            }
+        } catch (Exception e) {
+            logger.warning(e.getMessage());
+        }
+        return books;
+    }
+
 
 //    private final DataSource dataSource = DatabaseConfig.getDataSource();
 //
@@ -102,27 +134,6 @@ public class GenreRepositoryImpl implements GenreRepository {
 //            }
 //        }
 //        return null;
-//    }
-//
-//    @Override
-//    public List<Genre> findAll() throws SQLException {
-//        List<Genre> genres = new ArrayList<>();
-//        String selectAllGenresQuery = "SELECT id, name FROM genre";
-//        try (Connection connection = dataSource.getConnection();
-//             PreparedStatement genreStmt = connection.prepareStatement(selectAllGenresQuery);
-//             ResultSet resultSet = genreStmt.executeQuery()) {
-//
-//            while (resultSet.next()) {
-//                Genre genre = new Genre();
-//                genre.setId(resultSet.getLong("id"));
-//                genre.setName(resultSet.getString("name"));
-//
-//                // Получаем книги, связанные с жанром
-//                genre.setBooks(getBooksForGenre(genre.getId(), connection));
-//                genres.add(genre);
-//            }
-//        }
-//        return genres;
 //    }
 //
 //    @Override

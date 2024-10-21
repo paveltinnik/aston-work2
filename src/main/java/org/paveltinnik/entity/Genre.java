@@ -15,8 +15,8 @@ public class Genre {
     @Column(nullable = false, unique = true)
     private String name;
 
-//    @ManyToMany(mappedBy = "genres")
-//    private Set<Book> books = new HashSet<>(); // ManyToMany relationship
+    @ManyToMany(mappedBy = "genres")
+    private Set<Book> books = new HashSet<>(); // ManyToMany relationship
 
     public Genre() {}
 
@@ -41,20 +41,20 @@ public class Genre {
         this.name = name;
     }
 
-//    public Set<Book> getBooks() {
-//        return books;
-//    }
-//
-//    public void setBooks(Set<Book> books) {
-//        this.books = books;
-//    }
+    public Set<Book> getBooks() {
+        return books;
+    }
 
+    public void setBooks(Set<Book> books) {
+        this.books = books;
+    }
 
     @Override
     public String toString() {
         return "Genre{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", books=" + books +
                 '}';
     }
 }
