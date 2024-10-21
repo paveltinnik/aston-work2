@@ -46,7 +46,6 @@ public class GenreServiceImpl implements GenreService {
         logger.warning(genre.toString());
 
         genreRepository.save(genre);
-
     }
 
     @Override
